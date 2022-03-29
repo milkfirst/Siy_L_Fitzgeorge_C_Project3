@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide    {
+    display: none;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    /* 1.6*10 = 16px */
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1, h2, p {
+
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Section */
+header  {
+    display: flex;
+    flex-direction: column;
+    background-color: maroon;
+    height: 100px;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+nav {
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav box-icon {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+    transition: .5s ease-in-out;
+}
+
+.header-content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.4rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* -------------- ORIGINAL ELITE BEER SECTION -------------- */
+
+#promoImage    {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    justify-content: center;
+    padding: 40px;
+}
+
+#OriginalEliteBeer  {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+/* -------------- DIFFERENT FLAVOURS SECTION -------------- */
+#productInfo    {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.productDesc    {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+/* -------------- ABOUT US -------------- */
+#aboutUs    {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+/* -------------- FOOTER -------------- */
+footer  {
+    display: flex;
+    flex-direction: column;
+    background-color: maroon;
+    height: 200px;
+}
+
+#footerMenu  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#footerLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+}
+
+/* UTILITY CLASS */
+/*
+.hide   {
+    display: none;
+}
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+/* General rules - scale images, videos to size of container */
+/*
+img, video  {
+    max-width: 100%;
+}
+
+html    {
+    box-sizing: border-box;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    height: 100px;
+    width: 50px;
+}
+
+/* Fonts */
+
+
+/* General Rule for Elements */
+/*
+body    {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+li, a, button   {
+    color: #000;
+    text-decoration: none;
+    outline: 0;
+    transition:all .1s linear 0s;
+}
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo   {
+    cursor: pointer;
+}
+
+.navMenu {
+    list-style: none;
+}
+
+.navMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navMenu li a   {
+    transition: all 0.3s ease 0;
+}
+
+.navMenu li a:hover {
+    color: #0088a9;
+}
+
+button  {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover    {
+    background-color: rgba(0,136,169,1);
+}
+
+/*
+
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+
+.container  {
+    margin: 0px auto;
+    padding: 0px 15px 0px 15px;
+    max-width: 1200px;
+}
+
+/* Header and Nav */
+
+/* 
+#MainHeader {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+/* punching nav menu to the right */
+/* 
+#MainNav    {
+    display: flex;
+    flex-direction: column ;
+    margin-top: 20px;
+}
+/* 
+#MainNav button {
+    margin-left: auto;
+}
+
+#searchContent  {
+    display: flex;
+    flex-direction: row;
+}
+
+#MainNav input[type=text]   {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #cacaca;
+    border-radius: 3px 0px 0px 3px;
+    background-color: #fefefe;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    line-height: 1.5;
+    color: #0a0a0a;
+}
+
+#MainNav input[type=submit] {
+    height: 40px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 0px 3px 3px 0px;
+    font-size: .75em;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    background-color: #8fa771;
+    color: #fefefe;
+}
+
+#navContent  {
+    display: flex;
+    margin-top: 24px;
+}
+
+#navContent.slideToggle  {
+    display: flex;
+}
+
+#MainNav button {
+    background: url(images/logo-NAV.png) center no-repeat;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    transition: all 400ms ease;
+}
+
+#MainNav button.expanded    {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#logoCon    {
+    display: flex;
+    width: 100px;
+    height: 40px;
+}
+*/
